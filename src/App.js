@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import SiteLogo from './assets/images/site-logo.svg'
 import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+   <>
+   <header className='site-header'>
+    <div className='container'>
+      <div className='header'>
+        <a href='/' className='header-logo-link'>
+        <img src={SiteLogo} alt='Site Logo' width={196} height={46}></img>
         </a>
-      </header>
+        <ul className='header-list'>
+          <li className='header-item'>
+            <a href='#' className='header-link'>Home</a>
+          </li>
+          <li className='header-item'>
+            <a href='#' className='header-link'>Service</a>
+          </li>
+          <li className='header-item'>
+            <a href='#' className='header-link'>Portfolio</a>
+          </li>
+          <li className='header-item'>
+            <a href='#' className='header-link'>Blog</a>
+          </li>
+        </ul>
+        <button className='header-contact-btn'>Contact us</button>
+      </div>
     </div>
+   </header>
+   <main></main>
+   </>
   );
 }
 
